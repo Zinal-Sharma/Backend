@@ -1,0 +1,62 @@
+{
+    "restaurants": [
+{
+    "resid": 1,
+    "name": "Pane & Vino",
+    "description": "Pane & Vino is a top-rated Italian restaurant in Miami Beach, boasting fresh homemade pasta, attentive service, tiramisu, vegetarian and gluten-free options, and friendly atmosphere.",
+    "address": "1450 Washington Ave, Miami Beach, FL 33139-4112",
+    "category": "Italian",
+    "openinghours": "5:30 PM - 12:00 AM",
+    "weburl": "https://www.paneevinomia.com/"
+},
+{
+    "resid": 2,
+    "name": "Mon Ami Gabi",
+    "description": "Mon Ami Gabi is a popular French bistro-style eatery on the Las Vegas strip for its brunch and dinner.",
+    "address": "3655 Las Vegas Blvd S Paris Las Vegas, Las Vegas, NV 89109-4345",
+    "category": "French, Steakhouses, Breakfast & Brunch",
+    "openinghours": "7:00 AM - 11:00 PM",
+    "weburl": "https://www.monamigabi.com/"
+},
+{
+    "resid": 3,
+    "name": "Hog Island Oyster Company",
+    "description": "Hog Island Oyster Company is a must-try restaurant in San Francisco that serves fresh oysters in a variety of styles and is located near the Golden Gate ferry port.",
+    "address": "Ferry Building, One, #11, San Francisco, CA 94111",
+    "category": "Seafood, Seafood Markets, Live/Raw Food",
+    "openinghours": "11:00 AM - 8:00 PM",
+    "weburl": "https://hogislandoysters.com/"
+
+},
+{
+    "resid": 4,
+    "name": "Phil’s BBQ",
+    "description": "Phil's BBQ is a popular San Diego BBQ spot with pleasant employees and speedy service. Customers are raving about the food's quality and quantity size. The always-busy local establishment is packed with folks eager to try their ribs, onion rings, brisket, and other offerings. Even if there is a wait for a table, staff is kind and the service is prompt.",
+    "address": "3750 Sports Arena Blvd, San Diego, CA 92110-5129",
+    "category": "Barbeque, Bars",
+    "openinghours": "6:00 AM - 10:00 PM",
+    "weburl": "https://philsbbq.com/"
+
+},
+{
+    "resid": 5,
+    "name": "Spice Symphony",
+    "description": "Spice Symphony is a casual dining Indian restaurant in New York City, known for its Indian staples like samosas and garlic naan, as well as a broad wine list.",
+    "address": "150 E 50th St Between Lexington & 3rd Avenue, New York City, NY 10022-9500",
+    "category": "Chinese, Indian, Cocktail Bars",
+    "openinghours": "Mon - Thu,Sun 7:00 AM - 10:15 PM; Fri - Sat 7:00 AM - 11:30 PM",
+    "weburl": "http://www.spicesymphony.com/"
+
+},
+{
+    "resid": 6,
+    "name": "Duke’s Waikiki",
+    "description": "Duke's Waikiki is Hawaii's most legendary dessert restaurant, offering Oreo-crusted Hula Pie and other delicious dishes.",
+    "address": "2335 Kalakaua Ave 2335 Kalakaua Ave. Suite 116, Honolulu, Oahu, HI 96815-2941",
+    "category": "Hawaiian, Seafood, Cocktail Bars",
+    "openinghours": "7:00 AM - 12:00 AM",
+    "weburl": "https://www.dukeswaikiki.com/"
+
+}
+    ]
+}

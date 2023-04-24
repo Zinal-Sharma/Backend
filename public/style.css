@@ -1,0 +1,278 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 0.5em;
+    height: 100%;
+}
+
+.Top-background {
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+ul.navbar-list {
+    min-width: 700px;
+}
+
+    ul.navbar-list li {
+        display: inline;
+    }
+
+.navbar {
+    padding: 20px;
+    background-color: #33001A;
+    font-family: math;
+    font-size: larger;
+    height: 60px;
+}
+
+.navbar-item {
+    float: right;
+}
+
+.main {
+    height: 500px;
+    background-color: #fff1f1;
+    color: darkviolet;
+    padding: 1em;
+}
+
+#resume {
+    text-decoration: none;
+    margin-right: -742px;
+    margin-top: 5px;
+    width: 103px;
+    height: 26px;
+    background: #9FDBF8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+#about {
+    height: 580px;
+    background-color: #9FDBF8;
+    color: black;
+    font-style: italic;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#education {
+    background-color: #FFFFFF;
+    height: 264px;
+    color: black;
+    padding: 25px;
+}
+
+#projects {
+    height: 300px;
+    background-color: #8CAFF0;
+    color: black;
+    padding: 25px;
+}
+
+    #projects li {
+        font-size: 17px;
+        padding: 10px;
+        padding-left: 2px;
+    }
+
+#experience {
+    height: 300px;
+    background-color: #CCE5FF;
+    color: black;
+    font-size: 17px;
+}
+
+    #experience h2 {
+        padding-left: 10px;
+    }
+
+#blogs {
+    height: 403px;
+    background-color: #F9F7ED;
+    color: black;
+}
+
+    #blogs h2 {
+        margin-right: 30px;
+        height: 44px;
+    }
+
+    #blogs h3 {
+        height: 40px;
+    }
+
+.content {
+    display: inline-block;
+    max-width: 500px;
+    overflow: auto;
+    margin-left: 80px;
+}
+
+.content h1 {
+        margin-left: 51px;
+    }
+
+.jdate {
+    padding-left: 75em;
+    margin: 3px;
+}
+
+.loc {
+    padding-left: 70em;
+}
+
+.comp {
+    padding: 8px;
+}
+
+.exp {
+    padding: 8px;
+}
+
+#MySite3 span a {
+    padding-left: 84em;
+}
+
+.main.footer {
+    height: 130px;
+    background-color: #33001A;
+    color: white;
+}
+
+.socials {
+    margin-left: 300px;
+    height: 50px;
+}
+
+#footerheader {
+    margin: 14px;
+    height: 25px;
+    font-size: 18px;
+}
+
+.ft {
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+.bg-img {
+    height: 230px;
+}
+
+.twitter {
+    height: 35px;
+    margin-right: 19px;
+}
+
+.github {
+    height: 35px;
+    margin-right: 25px;
+}
+
+.facebook {
+    height: 35px;
+    margin-right: 20px;
+}
+
+.linkedin {
+    height: 35px;
+    margin-right: 262px;
+}
+
+.user-img {
+    height: 325px;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.ed {
+    display: inline-block;
+    padding: 9px;
+}
+
+.gridImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .navbar{
+        height: auto;
+    }
+    ul.navbar-list{
+        min-width: auto;
+    }
+    #resume{
+        margin: auto;
+    }
+
+    .gridImg {
+        flex-direction: column;
+    }
+
+    #about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+    .twitter,
+    .github,
+    .facebook,
+    .linkedin{
+        margin-right: auto;
+    }
+    .jdate{
+        padding: inherit;
+    }
+    #footerh,
+    #footerheader{
+        padding: inherit;
+    }
+    #education,
+    #projects,
+    #experience,
+    #blogs {
+        height: auto;
+    }
+    .socials{
+        display: contents;
+    }
+    .main.footer{
+        height: auto;
+    }
+    
+}
