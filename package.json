@@ -1,7 +1,7 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "top 6 restaurants",
+  "description": "Top 6 restaurants of USA",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index"
