@@ -3,10 +3,10 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
-//const { MongoClient, ServerApiVersion } = require('mongodb');
-//const uri = "mongodb+srv://zshar1:TsFZFxZyd4xc2nK6@restaurants.0pzu0cd.mongodb.net/?retryWrites=true&w=majority";        
-//const client = new MongoClient(uri);
-/*const connectDB=async()=>{
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://zshar1:TsFZFxZyd4xc2nK6@restaurants.0pzu0cd.mongodb.net/?retryWrites=true&w=majority";        
+const client = new MongoClient(uri);
+const connectDB=async()=>{
     try{
         await client.connect();
         console.log("Yay!! Mongo DB is connected")
@@ -16,14 +16,14 @@ var path = require('path');
         console.log(e)
     }
 }
-connectDB();*/
+connectDB();
 
 const headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
   };
 
-http.createServer(async function(req, res){
+const server = http.createServer(async function(req, res){
 
     if(req.url === "/"){
         fs.readFile("./public/index.html", "UTF-8", function(err, html){
@@ -48,23 +48,24 @@ http.createServer(async function(req, res){
         fileStream.pipe(res);
     }else if(req.url === "/api"){
         
-        fs.readFile( path.join(__dirname,'public','db.json'),(err,data)=>{
+        /*fs.readFile( path.join(__dirname,'public','db.json'),(err,data)=>{
         if (err) throw err;
         res.writeHead(200,headers);
         res.end(data);
-        })
+        })*/
 
-        /*const cursor = client.db("restaurants").collection("restaurants-collection").find({});
+        const cursor = client.db("restaurants").collection("restaurants-collection").find({});
         const results = await cursor.toArray();
-        //console.log('In api',results);
         const js= (JSON.stringify(results,null,2));
         res.writeHead(200,headers)
         res.write(js);
-        //console.log('Data',js);
-        res.end();*/
+        res.end();
     }
     else{
         res.writeHead(404, {"Content-Type": "text/html"});
         res.end("No Page Found");
     }
-}).listen(3000, ()=>console.log("Server is running"));
+});
+
+const PORT = process.env.PORT || 5959;
+server.listen(PORT,() => console.log(`Server is running on : ${PORT}`));
